@@ -11,14 +11,16 @@
     <!----Font awesome----->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!------Title---->
-    <title>Mimi's Boot</title>
+    <title>Mimi's Farm Berceni</title>
   </head>
   <body>
 
     <!----Navbar------>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Mimi's Farm</a>
+        <a class="navbar-brand" href="#home">
+          <img class="logo" src="assets/logo.png" alt="logo-img">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,13 +31,13 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#products">Products</a>
+              <a class="nav-link" href="#products">Produse</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
+              <a class="nav-link" href="#pricing">Preturi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About us</a>
+              <a class="nav-link" href="#about">Despre noi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -78,6 +80,8 @@
   </section>
     
 
+
+
 <!----Cards section----->
 <section class="cards-section">
     <div class="container" id="products">
@@ -89,7 +93,7 @@
             <div class="card-body">
               <h5 class="card-title">Rosii gustoase</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+              <a href="#" class="btn btn-primary main-btn" data-toggle="modal" data-target="#myModal">Comanda</a>
             </div>
           </div>
         </div>
@@ -100,7 +104,7 @@
             <div class="card-body">
               <h5 class="card-title">Castraveti crocanti</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+              <a href="#" class="btn btn-primary main-btn" data-toggle="modal" data-target="#myModal">Comanda</a>
             </div>
           </div>
         </div>
@@ -111,7 +115,7 @@
             <div class="card-body">
               <h5 class="card-title">Brocolli proaspeti</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+              <a href="#" class="btn btn-primary main-btn" data-toggle="modal" data-target="#myModal">Comanda</a>
             </div>
           </div>
         </div>
@@ -125,7 +129,7 @@
             <div class="card-body">
               <h5 class="card-title">Bio morcovi</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+              <a href="#" class="btn btn-primary main-btn" data-toggle="modal" data-target="#myModal">Comanda</a>
             </div>
           </div>
         </div>
@@ -136,7 +140,7 @@
             <div class="card-body">
               <h5 class="card-title">Mazare miraculoasa</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+              <a href="#" class="btn btn-primary main-btn" data-toggle="modal" data-target="#myModal">Comanda</a>
             </div>
           </div>
         </div>
@@ -147,7 +151,7 @@
             <div class="card-body">
               <h5 class="card-title">Cea mai rosie sfecla</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+              <a href="#" class="btn btn-primary main-btn" data-toggle="modal" data-target="#myModal">Comanda</a>
             </div>
           </div>
         </div>
@@ -280,8 +284,6 @@
      <a href="#">Daniel Anton</a>.
         </p>
       </div>
-
-      
     </div>
   </div>
 </footer>
@@ -291,6 +293,38 @@
 
 
 
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Comanda produs</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1" checked>
+          <label class="form-check-label" for="radios1">1 kg</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radios" id="radios2" value="option2">
+          <label class="form-check-label" for="radios2">2 kg</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radios" id="radios3" value="option3">
+          <label class="form-check-label" for="radios3">3 kg</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-danger second-btn" data-dismiss="modal">Inchide</button>
+        <button type="button" class="btn btn-primary main-btn">Comanda</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

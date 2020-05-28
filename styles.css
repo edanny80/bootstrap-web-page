@@ -15,6 +15,11 @@ body {
   height: 500px;
 }
 
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
 
 .cards-section,
 .info-section,
@@ -46,6 +51,16 @@ body {
 
 .main-btn:hover {
   background-color: #11d445;
+  color: black;
+}
+
+.second-btn {
+  background-color: #b30000;
+  border: none;
+}
+
+.second-btn:hover {
+  background-color: #ff4d4d;
   color: black;
 }
 
@@ -154,6 +169,11 @@ body {
     height: 300px;
   }
 
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
   .card {
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -162,10 +182,7 @@ body {
   .site-footer [class^=col-] {
     margin-bottom:30px
   }
-
 }
-
-  
 
 
 @media screen and (max-width: 480px) {
@@ -176,6 +193,11 @@ body {
 
   .carousel-inner > .carousel-item {
     height: 200px;
+  }
+
+  .logo {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .card {
