@@ -6,15 +6,18 @@ body {
   background-color: #99ff33;
 }
 
+
+
 .carousel {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 .carousel-inner > .carousel-item {
   height: 500px;
 }
-
+  
 .logo {
   width: 4rem;
   height: 4rem;
