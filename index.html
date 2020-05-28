@@ -4,15 +4,289 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <!----Font awesome----->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!------Title---->
     <title>Mimi's Boot</title>
   </head>
   <body>
-   
 
+    <!----Navbar------>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mimi's Farm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!---Carousel----->
+  <section class="carousel-section">
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/vegetables.jpg" class="d-block w-100" alt="veggie_1">  
+          </div>
+          <div class="carousel-item">
+            <img src="assets/vegetables2.jpg" class="d-block w-100" alt="veggie_2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/vegetables3.jpg" class="d-block w-100" alt="veggie_3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+    
+
+<!----Cards section----->
+<section class="cards-section">
+    <div class="container" id="products">
+      <!----First row----->
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/tomatoes.jpg" class="card-img-top" alt="veggie_1">
+            <div class="card-body">
+              <h5 class="card-title">Rosii gustoase</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/cucumbers.jpg" class="card-img-top" alt="veggie_1">
+            <div class="card-body">
+              <h5 class="card-title">Castraveti crocanti</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/brocolli.jpg" class="card-img-top" alt="veggie_1">
+            <div class="card-body">
+              <h5 class="card-title">Brocolli proaspeti</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!----Second row----->
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/carrots.jpg" class="card-img-top" alt="veggie_1">
+            <div class="card-body">
+              <h5 class="card-title">Bio morcovi</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/peas.jpg" class="card-img-top" alt="veggie_1">
+            <div class="card-body">
+              <h5 class="card-title">Mazare miraculoasa</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/beetroot.jpg" class="card-img-top" alt="veggie_1">
+            <div class="card-body">
+              <h5 class="card-title">Cea mai rosie sfecla</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary main-btn">Comanda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-----Pricing section------>
+  <section class="pricing-section">
+    <div class="container" id="pricing">
+      <p class="h2">Preturi</p>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tip</th>
+            <th scope="col">Soi</th>
+            <th scope="col">Pret/kg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Rosii</td>
+            <td>precos</td>
+            <td>10.00 Ron</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Castraveti</td>
+            <td>cornison</td>
+            <td>8.00 Ron</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Brocolli</td>
+            <td>Italia</td>
+            <td>11.00 Ron</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Morcovi</td>
+            <td>Buzau</td>
+            <td>5.50 Ron</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Mazare</td>
+            <td>Romania</td>
+            <td>7.50 Ron</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Sfecla rosie</td>
+            <td>Romania</td>
+            <td>7.95 Ron</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-------Info section---------->
+
+  <section class="info-section" id="about">
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+        Despre noi
+        </div>
+          <div class="card-body">
+          <blockquote class="blockquote mb-0">
+          <p>Infiintata in anul 2010, MIMI'S FARM BERCENI are ca principal obiect de activitate exploatarea terenurilor arabile. In primii ani de activitate se cultiva pe o suprafata de 90 ha cu un tractor de tip L 445 si unul tip U 650. Dupa doar 3 ani, in anul 1997, s-au achizitionat utilaje noi, dintre cele mai moderne si mai performante din lume, fapt care a dus la exploatarea a 700 de ha. Productivitatea a crescut in asa masura incat la 1 ha de cultura se lucreaza, la o singura trecere, cu lucrari minime, cu doar 60 litri de motorina</p>
+          <footer class="blockquote-footer">Anton Daniel Valentin <cite title="Source Title">-agronom</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!----------Contact section----------->
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="textarea">Mesaj</label>
+          <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary main-btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!----------Footer------------>
+
+<section class="footer-section">
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Ut aliquam purus sit amet luctus venenatis lectus magna. At quis risus sed vulputate odio. Consectetur lorem donec massa sapien faucibus et molestie ac. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Ipsum a arcu cursus vitae congue.</p>
+      </div>
+      
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="https://getbootstrap.com/">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+     <a href="#">Daniel Anton</a>.
+        </p>
+      </div>
+
+      
+    </div>
+  </div>
+</footer>
+</section>
+ 
 
 
 

@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #99ff33;
+}
+
+.carousel {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-inner > .carousel-item {
+  height: 500px;
+}
+
+
+.cards-section,
+.info-section,
+.footer-section,
+.site-footer {
+  background-color: #bfff80;
+  padding: 1rem;
+}
+
+.card {
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 285px;
+  height: 210px;
+}
+
+.main-btn {
+  background-color: #109e36;
+  border: none;
+}
+
+.main-btn:hover {
+  background-color: #11d445;
+  color: black;
+}
+
+.pricing-section {
+  margin-top: 2rem;
+}
+
+.card-header {
+  text-align: center;
+}
+
+.blockquote.mb-0 {
+  font-size: 18px;
+}
+
+.contact-section {
+  padding: 2rem;
+}
+
+/* Footer */
+
+.site-footer {
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#2A2220;
+}
+
+.site-footer hr {
+  border-top-color:#bbb;
+  opacity:0.5
+}
+
+.site-footer hr.small {
+  margin:20px 0
+}
+
+.site-footer h6 {
+  color: black;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.site-footer a {
+  color: black;
+}
+
+.site-footer a:hover {
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links {
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links li {
+  display:block
+}
+
+.footer-links a {
+  color: black;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links.inline li {
+  display:inline-block
+}
+
+.site-footer .social-icons {
+  text-align:right
+}
+
+.site-footer .social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.copyright-text {
+  margin:0;
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 720px) {
+  .carousel {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .carousel-inner > .carousel-item {
+    height: 300px;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .site-footer [class^=col-] {
+    margin-bottom:30px
+  }
+
+}
+
+  
+
+
+@media screen and (max-width: 480px) {
+  .carousel{
+    width: 100%;
+    margin: .5rem 0 .5rem 0;
+  }
+
+  .carousel-inner > .carousel-item {
+    height: 200px;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .site-footer {
+    padding-bottom:0
+  }
+
+  .site-footer .copyright-text,.site-footer .social-icons {
+    text-align:center
+  }
+} 
